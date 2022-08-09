@@ -1,0 +1,266 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Header Section */
+.header {
+  background-color: lightgray;
+  height: 10vh;
+}
+
+.header h1 {
+  text-align: center;
+  position: relative;
+  top: 10px;
+}
+
+/* Content here... */
+.container {
+  height: 80vh;
+  display: flex;
+  z-index: -1;
+}
+
+.box-1 {
+  width: 20vw;
+  height: 50%;
+  background-color: #F9F5EB;
+}
+.box-1 h2 {
+  position: absolute;
+  padding: 40px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.box-1 p {
+  position: relative;
+  top: 100px;
+  margin: 5px;
+  left: 10px;
+  font-size: 1.3rem;
+  font-weight: 900;
+  font-family: cursive;
+}
+
+.box-2 {
+  width: 60vw;
+  background-color: #A5C9CA;
+}
+.box-2 h2 {
+  position: absolute;
+  padding: 20px;
+  text-decoration: underline;
+}
+.box-2 p {
+  position: relative;
+  top: 70px;
+  padding: 15px;
+  font-family: monospace;
+  font-weight: 900;
+  font-size: 1rem;
+}
+
+.box-3 {
+  width: 20vw;
+  background-color: #94B49F;
+  height: 60%;
+}
+.box-3 h2 {
+  position: absolute;
+  padding: 20px;
+  text-align: center;
+  text-decoration: underline;
+}
+.box-3 p {
+  position: relative;
+  top: 70px;
+  padding: 10px;
+  font-family: monospace;
+  font-weight: 900;
+  font-size: 1rem;
+}
+
+/* Footer Section */
+
+footer {
+  background-color: rgba(232, 249, 253, 0.4);
+  height: 10vh;
+  position: fixed;
+  bottom: -1px;
+  width: 100vw;
+}
+
+footer h1 {
+  text-align: center;
+  position: relative;
+  top: 20%;
+}
+
+@media only screen and (max-width: 1080px) {
+  .box-1 h2 {
+    position: absolute;
+    padding: 20px;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 1027px) {
+  .box-1 h2 {
+    font-size: 1.3rem;
+    position: absolute;
+    padding: 20px;
+    text-align: center;
+  }
+  .box-1 p {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 1182px) {
+  .box-3 h2 {
+    position: absolute;
+    padding: 20px;
+    font-size: 1.3rem;
+  }
+}
+@media only screen and (max-width: 1051px) {
+  .box-3 h2 {
+    position: absolute;
+    padding: 20px;
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (max-width: 985px) {
+  .box-3 h2 {
+    position: absolute;
+    padding: 20px;
+    font-size: 1.1rem;
+  }
+}
+@media only screen and (max-width: 980px) {
+  .box-3 {
+    width: 20vw;
+    /* background-color: rgb(243, 217, 222); */
+    height: 70%;
+  }
+}
+@media only screen and (max-width: 921px) {
+  .box-3 h2 {
+    position: absolute;
+    padding: 20px;
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 871px) {
+  .box-1 {
+    width: 25vw;
+    height: 30vh;
+    top: 10.5%;
+    position: absolute;
+  }
+  .box-1 h2 {
+    font-size: 1.2rem;
+    padding: 10px;
+  }
+  .box-1 p {
+    font-size: 0.8rem;
+    position: relative;
+    top: 50px;
+    left: 5px;
+  }
+
+  .box-2 {
+    position: absolute;
+    top: 10.5%;
+    left: 25.5%;
+    width: 75vw;
+    height: 100vh;
+  }
+  .box-2 h2 {
+    font-size: 1.2rem;
+    padding: 10px;
+  }
+  .box-2 p {
+    font-size: 0.8rem;
+  }
+  .box-3 {
+    position: absolute;
+    top: 41%;
+    width: 25vw;
+    height: 69.5vh;
+  }
+  .box-3 h2 {
+    font-size: 1.1rem;
+    font-weight: 900;
+    padding: 5px;
+  }
+  .box-3 p {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 618px) {
+  .box-1 h2 {
+    font-size: 1rem;
+  }
+  .box-1 p {
+    font-size: 0.7rem;
+  }
+  .box-3 h2 {
+    font-size: 0.9rem;
+  }
+  .box-3 p {
+    font-size: 0.7rem;
+  }
+}
+
+@media only screen and (max-width: 529px) {
+  .box-1 {
+    display: block;
+    width: 100vw;
+    height: 20vh;
+    position: absolute;
+    top: 10.2%;
+  }
+  .box-1 h2 {
+    padding: 2%;
+    font-size: 1.4rem;
+  }
+  .box-1 p {
+    text-align: center;
+    font-size: 1rem;
+  }
+  .box-2 {
+    display: block;
+    width: 100vw;
+    position: absolute;
+    top: 30.5%;
+    height: 85vh;
+    left: 0;
+  }
+  .box-2 h2 {
+    padding: 2%;
+    font-size: 1.4rem;
+  }
+  .box-3 {
+    position: absolute;
+    top: 115.8%;
+    width: 100vw;
+    height: 40vh;
+  }
+  .box-3 h2 {
+    padding: 2%;
+    font-size: 1.4rem;
+  }
+  .box-3 p {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 361px) {
+  .box-2 p {
+    font-size: 0.7rem;
+  }
+}
